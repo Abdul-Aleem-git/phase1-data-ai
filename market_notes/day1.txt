@@ -1,0 +1,4 @@
+Day 1 market observation
+- Data Analyst dashboards are in demand
+- Power BI and python are frequently required
+- Clients want useful insights, not raw data

@@ -75,4 +75,3 @@ employees = [
 for e in employees:
     if e["salary"] > 60000:
         print(e["name"])
-

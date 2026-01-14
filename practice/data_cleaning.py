@@ -61,3 +61,33 @@ df_no_duplicates["age"] = df_no_duplicates["age"].astype(int)
 
 print("\nData types after fixing")
 print(df_no_duplicates.dtypes)
+
+#EDA
+#Step 1: Understanding data shape
+print("\nData shape", df.shape)
+
+#Step 2: Summary
+print("\nStatistical summary", df.describe())
+
+#Step 3: Categorical insights
+#Question: How many employees in each department
+print("\nEmployees per department")
+print(df["department"].value_counts())
+
+#Average salary by mean
+print("\nAverage salary by department")
+print(df.groupby("department")["salary"].mean())
+
+#Average age by department
+print("Average age by department")
+print(df.groupby("department")["age"].mean())
+
+#Step 5: Sorting for insights
+
+print("\nHighest salaries:")
+print(df.sort_values(by="salary", ascending=False))
+
+#Step 6: Correlation matrix
+
+print("\nCorrelation Matrix:")
+print(df[["age", "salary"]].corr())
